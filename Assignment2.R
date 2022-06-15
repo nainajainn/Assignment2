@@ -15,7 +15,7 @@ if (is.na(input) || input < 100 || input > 999) {
   c <- input %% 10 # gives remainder or right most digit
   b1 <- input %/% 10 # gives double digit integer (ab), still need to separate these digits
   b <- b1 %% 10 # gives middle digit
-  a <- b %/% 10 # gives left most digit
+  a <- b1 %/% 10 # gives left most digit
   
   sum.cube <- sum(a^3,b^3,c^3)
   # check if input is equal to sum.cube
