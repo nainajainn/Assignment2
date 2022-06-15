@@ -4,8 +4,8 @@
 # Get user input 
 input <- readline(prompt = "Please enter a three digit positive number: ")
 
-# Check if user input is numeric
-input <- as.numeric(input)
+# Check if user input is a whole number, no decimals
+input <- as.integer(input)
 
 # Check if user input is narcissistic which is a number that is equal to the sum of the cube of its own digits
 if (is.na(input) || input < 100 || input > 999) {
